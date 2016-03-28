@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="airship.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>行星与飞船</title>
+</head>
+
+<body>
+    <div class="space">
+        <div class="planet"></div>
+    </div>
+    <div class="operatePanel">
+        <h3>控制板</h3>
+        <hr>
+        <div class="PowerSystem">
+            <label>动力系统选择：</label>
+            <input type="radio" name="PowerSystem" value="PS1" /><span>前进号（速率30px/s,能耗5%/s）</span>
+            <input type="radio" name="PowerSystem" value="PS2" /><span>奔腾号（速率50px/s,能耗7%/s）</span>
+            <input type="radio" name="PowerSystem" value="PS3" /><span>超越号（速率80px/s,能耗9%/s）</span>
+        </div>
+        <div class="energysystem">
+            <label>能源系统选择：</label>
+            <input type="radio" name="energysystem" value="ES1" /><span>劲量型（补充能源速度2%/s）</span>
+            <input type="radio" name="energysystem" value="ES2" /><span>光能型（补充能源速度3%/s）</span>
+            <input type="radio" name="energysystem" value="ES3" /><span>永久型（补充能源速度4%/s）</span>
+        </div>
+        <input type='button' value="发射新飞船" id="launchShip" </div>
+        <hr>
+        <script type="text/javascript" src='./airship.js'></script>
+        <script src="./index.js"></script>
+        <script type="text/javascript">
+
+        </script>
+</body>
+
+</html>

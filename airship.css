@@ -1,0 +1,42 @@
+html,
+body {
+    margin: 2px;
+    padding: 0;
+}
+.space{
+	position: relative;
+	width: 943px;
+	height: 600px;
+	background: #000;
+}
+.planet{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: blue;
+	left: 150px;
+	top: 200px;
+}
+.airship{
+	position: absolute;
+	width: 100px;
+	height: 40px;
+	background: blue;
+	border-radius: 20px;
+}
+.airship-text{
+	width: 80px;
+	height: 100%;
+	background: #ccc;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: bold;
+}
+.operatePanel{
+    width:943px;
+    margin-top: 5px;
+    border:2px dotted #ccc;
+}
