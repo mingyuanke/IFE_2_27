@@ -40,13 +40,13 @@
         cssAdd(this.element, newTransform);
     }
     function moveFun() {
-        this.options.position = this.options.position + (this.options.speed / this.options.orbitalRadius);
-        if (this.options.power - Math.round(this.options.consumptionRate) <= 0) {
+        this.options.position = this.options.position + (this.options.speed / this.options.orbitalRadius)/5;
+        if (Math.round(this.options.power- this.options.consumptionRate/5) <= 0) {
             this.stopMove();
             this.options.power = 0;
         }
         else {
-            this.options.power = this.options.power - Math.round(this.options.consumptionRate);
+            this.options.power = Math.round(this.options.power- this.options.consumptionRate/5);
         }
         this.showText();
         positionFun.apply(this);
@@ -105,7 +105,7 @@
         },
         startMove: function() {
             if (!this.moving) {
-                this.moving = setInterval(moveFun.bind(this), 1000);
+                this.moving = setInterval(moveFun.bind(this), 200);
             }
         },
         stopMove: function() {
